@@ -1,4 +1,4 @@
-abstract class BankAccount {
+export abstract class BankAccount {
     constructor(
         public accountNumber: number,
         public ownerName : string,
