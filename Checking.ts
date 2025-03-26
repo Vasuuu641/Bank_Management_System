@@ -10,5 +10,12 @@ export class Checking extends BankAccount {
         super(accountNumber, ownerName, balance);
     }
 
-    
+   override Withdraw(amount: number) : number{
+        if(this.balance >= amount){
+            return this.balance = this.balance - amount;
+
+        }else{
+            return this.balance = this.balance - this.overdraft_Limit;
+        }
+    }
 }
